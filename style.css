@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    transition-duration: 1s;
+    z-index: 1;
+}
+
+nav:hover{
+    background-color: red;
+    transition-duration: 1s;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+    transition-duration: 1s;
+}
+
+#logo-white{
+    display: none;
+}
+
+nav a:hover{
+    text-decoration: underline !important;
+    transition-duration: 1s;
+}
+
+nav:hover .nav-menu ul li a{
+    color: white;
+    transition-duration: 1s;
+}
+
+nav:hover #logo-red{
+    display: none;
+    transition-duration: 1s;
+}
+
+nav:hover #logo-white{
+    display: block;
+    transition-duration: 1s;
+}
+
+.nav-brand {
+    width: 50%;
+}
+
+.nav-brand img {
+    width: 10%;
+}
+
+.nav-menu {
+    width: 50%;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nav-menu ul li a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    padding: 0 0;
+    background: white;
+    align-items: center;
+}
+
+.hero-image{
+    width: 35%;
+    animation-name: slideToRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.hero-image img{
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.hero-image img:hover{
+    opacity: 0.6;
+    transition-duration: 1s;
+}
+
+@keyframes slideToLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideToRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.hero-text{
+    width: 65%;
+    margin-left: 50px;
+    animation-name: slideToLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hero-text p{
+    font-size: 20px;
+    color: red;
+}
+
+.socialmedia-list{
+    width: 40%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid red;
+    background: red;
+}
+
+.socialmedia-list img{
+    width: 70%;
+}
+
+.cv-download-button, .cv-introduction-button{
+    text-decoration: none;
+    background: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid red;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.cv-download-button:hover, .cv-introduction-button:hover{
+    background: white;
+    color: red; 
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+.hero-content{
+    padding: 100px 50px;
+    width: 100%;
+    background: linear-gradient(red, black);
+    display: none;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hero-content p{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.cv-home-button{
+    text-decoration: none;
+    background: white;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 3px solid white;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.cv-home-button:hover{
+    background: red;
+    color: white; 
+    border-radius: 20px;
+    transition-duration: 1s;
+}
+
+.skill-intro, .project-intro, .experience-intro{
+    padding: 50px 50px;
+    text-align: center;
+    background: white;
+}
+
+.skill-intro h1, .project-intro h1, .experience-intro h1{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.skill-section, .project-section, .experience-section{
+    text-align: justify;
+    background: red;
+}
+
+.skill-subsection, .project-subsection{
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.experience-subsection{
+    width: 100%;
+}
+
+.experience-section hr{
+    background: white;
+    border: 10px solid white;
+}
+
+.experience-organization-section, .experience-education-section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.experience-organization-title, .experience-education-title{
+    width: 25%;
+    cursor: pointer;
+}
+
+.experience-organization-title h1, .experience-education-title h1{
+    color: white;
+    padding: 50px 30px;
+}
+
+.experience-organization-content, .experience-education-content{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experience-box, .project-box{
+    width: 40%;
+    background: white;
+    padding: 20px 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.skill-box{
+    width: 20%;
+    background: white;
+    padding: 20px 20px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.experience-box h1, .project-box h1, .skill-box h1{
+    font-size: 20px;
+    color: red;
+}
+
+.experience-box p, .project-box p, .skill-box p{
+    margin: 5px 0;
+    font-size: 15px;
+    color: red;
+}
+
+.experience-job{
+    font-weight: bold;
+}
+
+.contact-section{
+    width: 100%;
+    padding: 50px 50px;
+}
+
+.contact-section h1{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form input[type=text], .contact-section form input[type=email]{
+    width: 40%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 3px;
+}
+
+.contact-section form textarea{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 3px;
+}
+
+.contact-section form button{
+    width: 20%;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border-color: red;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+.contact-section form button:hover{
+    background-color: white;
+    color: red;
+    transition-duration: 0.5s;
+}
+
+.contact-section h2{
+    font-size: 25px;
+    color: red;
+}
+
+.footer-section{
+    background: red;
+}
+
+.footer-section p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.footer-section hr{
+    margin: 10px 0;
+    border: 2px dashed white;
+}
