@@ -20,11 +20,6 @@ nav {
     z-index: 1;
 }
 
-nav:hover{
-    background-color: red;
-    transition-duration: 1s;
-}
-
 nav a {
     color: red;
     text-decoration: none;
@@ -34,26 +29,6 @@ nav a {
 
 #logo-white{
     display: none;
-}
-
-nav a:hover{
-    text-decoration: underline !important;
-    transition-duration: 1s;
-}
-
-nav:hover .nav-menu ul li a{
-    color: white;
-    transition-duration: 1s;
-}
-
-nav:hover #logo-red{
-    display: none;
-    transition-duration: 1s;
-}
-
-nav:hover #logo-white{
-    display: block;
-    transition-duration: 1s;
 }
 
 .nav-brand {
@@ -80,14 +55,6 @@ nav:hover #logo-white{
     font-weight: bold;
 }
 
-#hamburger-menu-red{
-    display: none;
-}
-
-#hamburger-menu-white{
-    display: none;
-}
-
 .hero-section {
     width: 100%;
     display: flex;
@@ -106,11 +73,6 @@ nav:hover #logo-white{
 
 .hero-image img{
     width: 100%;
-    transition-duration: 1s;
-}
-
-.hero-image img:hover{
-    opacity: 0.6;
     transition-duration: 1s;
 }
 
@@ -176,13 +138,6 @@ nav:hover #logo-white{
     padding: 10px 20px;
     border: 3px solid red;
     cursor: pointer;
-    transition-duration: 1s;
-}
-
-.cv-download-button:hover, .cv-introduction-button:hover{
-    background: white;
-    color: red; 
-    border-radius: 20px;
     transition-duration: 1s;
 }
 
@@ -406,10 +361,13 @@ nav:hover #logo-white{
 
 @media only screen and (max-width: 768px){
     nav{
+        top: 0;
         width: 100%;
         display: inline-block;
-        position: relative;
+        position: sticky;
         padding: 20px;
+        background: red;
+        border-bottom: 10px solid white;
     }
     .nav-brand{
         width: 100%;
@@ -421,6 +379,12 @@ nav:hover #logo-white{
         margin-right: auto;
         display: block;
     }
+    #logo-red{
+        display: none;
+    }
+    #logo-white{
+        display: block;
+    }
     .nav-menu{
         width: 100%;
     }
@@ -429,6 +393,7 @@ nav:hover #logo-white{
     }
     .nav-menu ul li a{
         font-size: 15px;
+        color: white;
     }
     .hero-section{
         width: 100%;
@@ -441,6 +406,7 @@ nav:hover #logo-white{
     }
     .hero-text{
         width: 100%;
+        padding: 20px 0;
         margin: 0;
         text-align: center;
     }
@@ -494,10 +460,6 @@ nav:hover #logo-white{
         font-weight: bold;
         font-size: 25px;
         padding: 20px 0;
-    }
-    .skill-section, .project-section, .experience-section{
-        text-align: justify;
-        background: red;
     }
     .skill-subsection, .project-subsection{
         display: inline-block;
@@ -556,5 +518,38 @@ nav:hover #logo-white{
     }
     .contact-section p{
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 901px){
+    nav:hover{
+        background-color: red;
+        transition-duration: 1s;
+    }
+    nav a:hover{
+        text-decoration: underline !important;
+        transition-duration: 1s;
+    }
+    nav:hover .nav-menu ul li a{
+        color: white;
+        transition-duration: 1s;
+    }
+    nav:hover #logo-red{
+        display: none;
+        transition-duration: 1s;
+    }
+    nav:hover #logo-white{
+        display: block;
+        transition-duration: 1s;
+    }
+    .hero-image img:hover{
+        opacity: 0.6;
+        transition-duration: 1s;
+    }
+    .cv-download-button:hover, .cv-introduction-button:hover{
+        background: white;
+        color: red; 
+        border-radius: 20px;
+        transition-duration: 1s;
     }
 }
