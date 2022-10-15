@@ -80,6 +80,14 @@ nav:hover #logo-white{
     font-weight: bold;
 }
 
+#hamburger-menu-red{
+    display: none;
+}
+
+#hamburger-menu-white{
+    display: none;
+}
+
 .hero-section {
     width: 100%;
     display: flex;
@@ -322,7 +330,14 @@ nav:hover #logo-white{
     padding: 50px 0;
 }
 
-.contact-section form{
+.contact-section p{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* .contact-section form{
     display: flex;
     flex-direction: column;
 }
@@ -370,7 +385,7 @@ nav:hover #logo-white{
 .contact-section h2{
     font-size: 25px;
     color: red;
-}
+} */
 
 .footer-section{
     background: red;
@@ -387,4 +402,159 @@ nav:hover #logo-white{
 .footer-section hr{
     margin: 10px 0;
     border: 2px dashed white;
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        padding: 20px;
+    }
+    .nav-brand{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-brand img{
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .nav-menu{
+        width: 100%;
+    }
+    .nav-menu ul li{
+        text-align: center;
+    }
+    .nav-menu ul li a{
+        font-size: 15px;
+    }
+    .hero-section{
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+    .hero-image{
+        width: 0%;
+        display: none;
+    }
+    .hero-text{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .hero-text p{
+        font-size: 15px;
+    }
+    .socialmedia-list{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid red;
+    }
+    .socialmedia-list img{
+        width: 65%;
+    }
+    .cv-download-button, .cv-introduction-button{
+        font-size: 15px;
+        padding: 10px;
+        border: 2px solid red;
+    }
+    .hero-content{
+        padding: 20px;
+    }
+    .hero-content h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero-content p{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+    }
+    .cv-home-button{
+        font-size: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border: 2px solid white;
+    }
+    .skill-intro, .project-intro, .experience-intro{
+        padding: 0;
+        text-align: center;
+        background: white;
+    }
+    .skill-intro h1, .project-intro h1, .experience-intro h1{
+        color: red;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 20px 0;
+    }
+    .skill-section, .project-section, .experience-section{
+        text-align: justify;
+        background: red;
+    }
+    .skill-subsection, .project-subsection{
+        display: inline-block;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .experience-subsection{
+        width: 100%;
+    }
+    .experience-section hr{
+        display: none;
+    }
+    .experience-organization-section, .experience-education-section{
+        display: inline-block;
+        width: 100%;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .experience-organization-title, .experience-education-title{
+        width: 100%;
+    }
+    .experience-organization-title h1, .experience-education-title h1{
+        color: white;
+        padding: 0;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .experience-organization-content, .experience-education-content{
+        width: 100%;
+        display: inline-block;
+    }
+    .experience-box, .project-box{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    .skill-box{
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+    .experience-box h1, .project-box h1, .skill-box h1{
+        font-size: 20px;
+    }
+    .experience-box p, .project-box p, .skill-box p{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .contact-section{
+        padding: 0;
+    }
+    .contact-section h1{
+        padding: 20px 0;
+        font-size: 25px;
+    }
+    .contact-section p{
+        margin-bottom: 20px;
+    }
 }
