@@ -366,8 +366,8 @@ nav a {
         display: inline-block;
         position: sticky;
         padding: 20px;
-        background: red;
-        border-bottom: 10px solid white;
+        background: white;
+        border-bottom: 5px solid red;
     }
     .nav-brand{
         width: 100%;
@@ -380,10 +380,10 @@ nav a {
         display: block;
     }
     #logo-red{
-        display: none;
+        display: block;
     }
     #logo-white{
-        display: block;
+        display: none;
     }
     .nav-menu{
         width: 100%;
@@ -393,7 +393,7 @@ nav a {
     }
     .nav-menu ul li a{
         font-size: 15px;
-        color: white;
+        color: red;
     }
     .hero-section{
         width: 100%;
